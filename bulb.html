@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night owl</title>
+    <link rel="stylesheet" href="bulb.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>EYES OF OWL</h1>
+    </header>
+    <section>
+        <img src="off.jpg" id="bulb" width="400">
+        <div class="btn_container"><button id="on" class="bulb_btn" onclick="bulb_on()">Day</button>
+        <button id="off" class="bulb_btn" onclick="bulb_off()">Night</button></div>
+    </section>
+    <script>
+         function bulb_on(){
+      document.getElementById('bulb').src='on.jpg';
+  }
+  function bulb_off(){
+      document.getElementById('bulb').src='off.jpg';
+  }
+    </script>
+  </body>
+</html>
